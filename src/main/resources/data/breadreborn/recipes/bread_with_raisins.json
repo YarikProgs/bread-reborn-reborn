@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "breadreborn:raisins"
+        },
+        {
+            "item": "breadreborn:raisins"
+        },
+        {
+            "item": "breadreborn:raisins"
+        }
+    ],
+    "result": {
+        "item": "breadreborn:bread_with_raisins",
+        "count": 1
+    }
+}

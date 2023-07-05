@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 7,
+        "max": 12
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:bread"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "breadreborn:enchanted_golden_bread"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "breadreborn:golden_flour"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "breadreborn:flour"
+        }
+      ]
+    }
+  ]
+}

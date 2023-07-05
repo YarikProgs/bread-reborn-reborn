@@ -1,0 +1,9 @@
+{
+  "type": "smoking",
+  "ingredient": {
+    "item": "breadreborn:crimson_flour"
+  },
+  "result": "breadreborn:crimson_bread",
+  "experience": 0.1,
+  "cookingtime": 100
+}

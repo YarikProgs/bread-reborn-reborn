@@ -14,7 +14,8 @@
   "item.breadreborn.enchanted_golden_bread": "Зачарованный золотой хлеб",
   "item.breadreborn.grape": "Виноград",
   "desc.breadreborn.grape": "Может быть обжарен на костре для приготовления изюма",
-  "desc.breadreborn.millstone": "Если взять палку в левую руку, то с помощью блока можно производить муку из соответствующих материалов",
+  "desc.breadreborn.millstone_pt1": "Если взять палку в левую руку, то с помощью",
+  "desc.breadreborn.millstone_pt2": "блока можно производить муку из соответствующих материалов",
   "desc.breadreborn.wine": "Может дать как хороший эффект, так и плохой. Нельзя пить при тошноте и отравлении",
   "item.breadreborn.raisins": "Изюм",
   "item.breadreborn.wine": "Вино",
@@ -23,5 +24,5 @@
   "block.breadreborn.grape_vines": "Виноградная лоза",
   "block.breadreborn.blooming_grape_vines": "Цветущая виноградная лоза",
 
-  "itemGroup.breadreborn": "Bread reborn"
+  "itemGroup.breadreborn.breadreborn": "Bread reborn"
 }
