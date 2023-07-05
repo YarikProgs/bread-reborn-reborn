@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "net.aros.breadreborn.BreadReborn"
+    ],
+    "client": [
+      "net.aros.breadreborn.BreadRebornClient"
     ]
   },
   "mixins": [
