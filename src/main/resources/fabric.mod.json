@@ -20,7 +20,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.aros.breadreborn.Breadreborn"
+      "net.aros.breadreborn.BreadReborn"
     ]
   },
   "mixins": [
