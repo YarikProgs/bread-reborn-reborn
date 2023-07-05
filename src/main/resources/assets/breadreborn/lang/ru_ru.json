@@ -1,0 +1,27 @@
+{
+  "item.breadreborn.flour": "Мука",
+  "item.breadreborn.crimson_flour": "Багровая мука",
+  "item.breadreborn.warped_flour": "Искажённая мука",
+  "item.breadreborn.chorus_flour": "Хорусовая мука",
+  "item.breadreborn.sculk_flour": "Скалковая мука",
+  "item.breadreborn.golden_flour": "Золотая мука",
+  "item.breadreborn.bread_with_raisins": "Хлеб с изюмом",
+  "item.breadreborn.crimson_bread": "Багровый хлеб",
+  "item.breadreborn.warped_bread": "Искажённый хлеб",
+  "item.breadreborn.chorus_bread": "Хорусовый хлеб",
+  "item.breadreborn.sculk_bread": "Скалковый хлеб",
+  "item.breadreborn.golden_bread": "Золотой хлеб",
+  "item.breadreborn.enchanted_golden_bread": "Зачарованный золотой хлеб",
+  "item.breadreborn.grape": "Виноград",
+  "desc.breadreborn.grape": "Может быть обжарен на костре для приготовления изюма",
+  "desc.breadreborn.millstone": "Если взять палку в левую руку, то с помощью блока можно производить муку из соответствующих материалов",
+  "desc.breadreborn.wine": "Может дать как хороший эффект, так и плохой. Нельзя пить при тошноте и отравлении",
+  "item.breadreborn.raisins": "Изюм",
+  "item.breadreborn.wine": "Вино",
+
+  "block.breadreborn.millstone": "Жернов",
+  "block.breadreborn.grape_vines": "Виноградная лоза",
+  "block.breadreborn.blooming_grape_vines": "Цветущая виноградная лоза",
+
+  "itemGroup.breadreborn": "Bread reborn"
+}

@@ -1,0 +1,27 @@
+{
+  "item.breadreborn.flour": "Flour",
+  "item.breadreborn.crimson_flour": "Crimson flour",
+  "item.breadreborn.warped_flour": "Warped flour",
+  "item.breadreborn.chorus_flour": "Chorus flour",
+  "item.breadreborn.sculk_flour": "Sculk flour",
+  "item.breadreborn.golden_flour": "Golden flour",
+  "item.breadreborn.bread_with_raisins": "Bread with raisins",
+  "item.breadreborn.crimson_bread": "Crimson bread",
+  "item.breadreborn.warped_bread": "Warped bread",
+  "item.breadreborn.chorus_bread": "Chorus bread",
+  "item.breadreborn.sculk_bread": "Sculk bread",
+  "item.breadreborn.golden_bread": "Golden bread",
+  "item.breadreborn.enchanted_golden_bread": "Enchanted golden bread",
+  "item.breadreborn.grape": "Grape",
+  "desc.breadreborn.grape": "Can be fire-roasted to make raisins",
+  "desc.breadreborn.millstone": "If you take a stick in your left hand, then with the help of a block you can produce flour from the corresponding materials",
+  "desc.breadreborn.wine": "It can give both a good effect and a bad one. You can't drink it with nausea and poisoning",
+  "item.breadreborn.raisins": "Raisins",
+  "item.breadreborn.wine": "Wine",
+
+  "block.breadreborn.millstone": "Millstone",
+  "block.breadreborn.grape_vines": "Grape vines",
+  "block.breadreborn.blooming_grape_vines": "Blooming grape vines",
+
+  "itemGroup.breadreborn": "Bread reborn"
+}

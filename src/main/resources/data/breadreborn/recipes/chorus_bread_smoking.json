@@ -1,0 +1,9 @@
+{
+  "type": "smoking",
+  "ingredient": {
+    "item": "breadreborn:chorus_flour"
+  },
+  "result": "breadreborn:chorus_bread",
+  "experience": 0.1,
+  "cookingtime": 100
+}

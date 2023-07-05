@@ -1,0 +1,10 @@
+{
+  "type": "breadreborn:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city"
+    }
+  ],
+  "item": "breadreborn:enchanted_golden_bread"
+}

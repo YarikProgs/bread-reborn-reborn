@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[43,)"
+license = "MIT"
+
+[[mods]]
+modId = "breadreborn"
+version = "${file.jarVersion}"
+displayName = "Bread reborn"
+logoFile = "breadreborn.png"
+credits = "Thanks to Aros (coder) and Ducilanus (artist)"
+authors = "Aros, Ducilanus"
+description = '''
+описание здесь.
+'''
+
+[[dependencies.breadreborn]]
+modId = "forge"
+mandatory = true
+versionRange = "[43,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.breadreborn]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.2,1.20)"
+ordering = "NONE"
+side = "BOTH"

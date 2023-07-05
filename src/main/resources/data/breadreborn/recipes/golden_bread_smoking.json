@@ -1,0 +1,9 @@
+{
+  "type": "smoking",
+  "ingredient": {
+    "item": "breadreborn:golden_flour"
+  },
+  "result": "breadreborn:golden_bread",
+  "experience": 0.1,
+  "cookingtime": 100
+}

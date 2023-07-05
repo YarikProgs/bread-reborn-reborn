@@ -1,0 +1,9 @@
+{
+  "type": "smoking",
+  "ingredient": {
+    "item": "breadreborn:warped_flour"
+  },
+  "result": "breadreborn:warped_bread",
+  "experience": 0.1,
+  "cookingtime": 100
+}
