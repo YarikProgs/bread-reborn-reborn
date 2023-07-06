@@ -3,15 +3,15 @@
   "id": "breadreborn",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Bread reborn: reborn",
+  "description": "More bread and cool stuff. Now with java!",
   "authors": [
     "Aros",
     "Ducilanus"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/YarikProgs",
+    "sources": "https://github.com/YarikProgs/bread-reborn-reborn"
   },
 
   "license": "MIT",
