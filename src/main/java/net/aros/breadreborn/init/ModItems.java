@@ -1,31 +1,22 @@
 package net.aros.breadreborn.init;
 
 import net.aros.breadreborn.BreadReborn;
-import net.aros.breadreborn.items.CustomBread;
-import net.aros.breadreborn.items.Item64;
-import net.aros.breadreborn.items.WineItem;
+import net.aros.breadreborn.items.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.text.Style;
-import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
 
 import static net.aros.breadreborn.BreadReborn.BREAD_REBORN_TAB;
 import static net.aros.breadreborn.BreadReborn.MOD_ID;
 
+@SuppressWarnings("unused")
 public class ModItems {
     public static final Item FLOUR = register("flour", new Item64());
     public static final Item CRIMSON_FLOUR = register("crimson_flour", new Item64());
@@ -44,11 +35,11 @@ public class ModItems {
 
     public static final Item WINE = register("wine", new WineItem());
 
-    public static final Item MILLSTONE = register("millstone", new BlockItem(ModBlocks.MILLSTONE, new FabricItemSettings().group(BREAD_REBORN_TAB).maxCount(64)) { @Override public void appendTooltip(ItemStack p_41421_, @Nullable World p_41422_, List<Text> list, TooltipContext p_41424_) { list.add(Text.translatable("desc." + MOD_ID + ".millstone_pt1").setStyle(Style.EMPTY.withItalic(true).withColor(Formatting.GRAY))); list.add(Text.translatable("desc." + MOD_ID + ".millstone_pt2").setStyle(Style.EMPTY.withItalic(true).withColor(Formatting.GRAY)));; super.appendTooltip(p_41421_, p_41422_, list, p_41424_); }} );
+    public static final Item MILLSTONE = register("millstone", new MillstoneBlockItem());
     public static final Item GRAPE_VINES = register("grape_vines", new BlockItem(ModBlocks.GRAPE_VINES, new FabricItemSettings().group(BREAD_REBORN_TAB).maxCount(64)));
     public static final Item BLOOMING_GRAPE_VINES = register("blooming_grape_vines", new BlockItem(ModBlocks.BLOOMING_GRAPE_VINES, new FabricItemSettings().group(BREAD_REBORN_TAB).maxCount(64)));
 
-    public static final Item GRAPE = register("grape", new Item(new FabricItemSettings().group(BreadReborn.BREAD_REBORN_TAB).maxCount(64).food(new FoodComponent.Builder().snack().hunger(4).saturationModifier(0.1F).build())) { @Override public void appendTooltip(ItemStack p_41421_, @Nullable World p_41422_, List<Text> list, TooltipContext p_41424_) { list.add(Text.translatable("desc." + MOD_ID + ".grape").setStyle(Style.EMPTY.withItalic(true).withColor(Formatting.GRAY))); super.appendTooltip(p_41421_, p_41422_, list, p_41424_); }});
+    public static final Item GRAPE = register("grape", new GrapeItem());
     public static final Item RAISINS = register("raisins", new Item(new FabricItemSettings().group(BreadReborn.BREAD_REBORN_TAB).food(new FoodComponent.Builder().snack().hunger(2).saturationModifier(0.8F).build()).maxCount(64)));
 
     private static Item register(String name, Item item) {

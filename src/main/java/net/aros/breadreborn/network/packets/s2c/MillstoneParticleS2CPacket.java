@@ -10,6 +10,7 @@ import net.minecraft.util.math.BlockPos;
 import java.util.Random;
 
 public class MillstoneParticleS2CPacket {
+    @SuppressWarnings("unused")
     public static void receive(MinecraftClient client, ClientPlayNetworkHandler handler, PacketByteBuf buf, PacketSender sender) {
         Random random = new Random();
         BlockPos pos = buf.readBlockPos();

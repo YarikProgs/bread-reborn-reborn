@@ -39,9 +39,9 @@ public class WineItem extends Item {
     }
     
     public ItemStack finishUsing(ItemStack stack, World level, LivingEntity player) {
-        if (player instanceof ServerPlayerEntity serverplayer) {
-            Criteria.CONSUME_ITEM.trigger(serverplayer, stack);
-            serverplayer.incrementStat(Stats.USED.getOrCreateStat(this));
+        if (player instanceof ServerPlayerEntity serverPlayer) {
+            Criteria.CONSUME_ITEM.trigger(serverPlayer, stack);
+            serverPlayer.incrementStat(Stats.USED.getOrCreateStat(this));
         }
 
         if (player instanceof PlayerEntity && !((PlayerEntity)player).getAbilities().creativeMode) {
@@ -68,7 +68,7 @@ public class WineItem extends Item {
         return stack.isEmpty() ? new ItemStack(Items.GLASS_BOTTLE) : stack;
     }
 
-    public int getMaxUseTime(ItemStack p_42933_) {
+    public int getMaxUseTime(ItemStack stack) {
         return 32;
     }
 
