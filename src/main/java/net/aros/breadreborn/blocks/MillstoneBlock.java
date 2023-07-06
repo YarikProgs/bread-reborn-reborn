@@ -3,7 +3,6 @@ package net.aros.breadreborn.blocks;
 import net.aros.breadreborn.init.ModItems;
 import net.aros.breadreborn.network.ModMessages;
 import net.aros.breadreborn.network.packtes.s2c.MillstoneParticlesS2CPacket;
-import net.aros.breadreborn.particle.ModParticles;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
@@ -23,9 +22,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
-
 import java.util.Map;
-import java.util.Random;
 
 public class MillstoneBlock extends Block {
     private static final VoxelShape shape = Block.box(0, 0, 0, 16, 14, 16);

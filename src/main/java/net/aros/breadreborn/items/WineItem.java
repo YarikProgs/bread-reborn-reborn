@@ -8,7 +8,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -17,6 +16,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.lwjgl.system.NonnullDefault;
 
 import java.util.List;
 import java.util.Random;
@@ -29,10 +29,14 @@ public class WineItem extends Item {
         super(new Item.Properties().stacksTo(16).tab(BREAD_REBORN_TAB).craftRemainder(Items.GLASS_BOTTLE));
     }
 
-    public @NotNull UseAnim getUseAnimation(ItemStack stack) {
+    @NonnullDefault
+    @NotNull
+    public UseAnim getUseAnimation(ItemStack stack) {
         return UseAnim.DRINK;
     }
 
+    @NonnullDefault
+    @NotNull
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity player) {
         if (!level.isClientSide) player.curePotionEffects(stack); // FORGE - move up so stack.shrink does not turn stack into air
         if (player instanceof ServerPlayer serverplayer) {
@@ -63,11 +67,14 @@ public class WineItem extends Item {
 
         return stack.isEmpty() ? new ItemStack(Items.GLASS_BOTTLE) : stack;
     }
-
-    public int getUseDuration(ItemStack p_42933_) {
+    
+    @NonnullDefault
+    public int getUseDuration(ItemStack stack) {
         return 32;
     }
-
+    
+    @NonnullDefault
+    @NotNull
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         for (MobEffectInstance effect : player.getActiveEffects()) {
             if (effect.getEffect() == MobEffects.CONFUSION || effect.getEffect() == MobEffects.POISON)
@@ -77,8 +84,9 @@ public class WineItem extends Item {
     }
 
     @Override
-    public void appendHoverText(ItemStack p_41421_, @Nullable Level p_41422_, List<Component> list, TooltipFlag p_41424_) {
+    @NonnullDefault
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> list, TooltipFlag flag) {
         list.add(Component.translatable("desc." + MOD_ID + ".wine").setStyle(Style.EMPTY.withItalic(true).withColor(ChatFormatting.GRAY)));
-        super.appendHoverText(p_41421_, p_41422_, list, p_41424_);
+        super.appendHoverText(stack, level, list, flag);
     }
 }

@@ -1,7 +1,6 @@
 package net.aros.breadreborn.items;
 
 import net.aros.breadreborn.BreadReborn;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;

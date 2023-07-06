@@ -10,6 +10,7 @@ import net.minecraftforge.network.simple.SimpleChannel;
 
 import static net.aros.breadreborn.BreadReborn.MOD_ID;
 
+@SuppressWarnings("unused")
 public class ModMessages {
     private static SimpleChannel INSTANCE;
 

@@ -11,7 +11,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -22,6 +21,7 @@ import org.slf4j.Logger;
 
 
 @Mod(BreadReborn.MOD_ID)
+@SuppressWarnings("all")
 public class BreadReborn {
     public static final String MOD_ID = "breadreborn";
     private static final Logger LOGGER = LogUtils.getLogger();
@@ -48,7 +48,6 @@ public class BreadReborn {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    @SuppressWarnings("all")
     private void clientSetup(final FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GRAPE_VINES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLOOMING_GRAPE_VINES.get(), RenderType.cutout());

@@ -4,9 +4,9 @@ import net.aros.breadreborn.particle.ModParticles;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.network.NetworkEvent;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
 import java.util.function.Supplier;
@@ -26,7 +26,8 @@ public class MillstoneParticlesS2CPacket {
         buf.writeBlockPos(pos);
     }
 
-    public boolean handle(Supplier<NetworkEvent.Context> supplier) {
+    @SuppressWarnings("all")
+    public boolean handle(@NotNull Supplier<NetworkEvent.Context> supplier) {
         NetworkEvent.Context context = supplier.get();
         Minecraft minecraft = Minecraft.getInstance();
         Level level = minecraft.level;

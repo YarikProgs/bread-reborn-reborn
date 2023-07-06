@@ -9,6 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import static net.aros.breadreborn.BreadReborn.MOD_ID;
 
+@SuppressWarnings("unused")
 public class ModLootModifiers {
     public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> LOOT_MODIFIER_SERIALIZERS
             = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, MOD_ID);

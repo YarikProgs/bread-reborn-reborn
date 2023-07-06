@@ -6,6 +6,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.NotNull;
+import org.lwjgl.system.NonnullDefault;
 
 public class FlourParticle extends TextureSheetParticle {
     private final SpriteSet sprites;
@@ -58,6 +59,7 @@ public class FlourParticle extends TextureSheetParticle {
             this.sprites = spriteSet;
         }
 
+        @NonnullDefault
         public Particle createParticle(SimpleParticleType particleType, ClientLevel level,
                                        double x, double y, double z,
                                        double dx, double dy, double dz) {
