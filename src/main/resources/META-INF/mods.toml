@@ -4,13 +4,13 @@ license = "MIT"
 
 [[mods]]
 modId = "breadreborn"
-version = "${file.jarVersion}"
-displayName = "Bread reborn"
+version = "${file.jarVersion}}"
+displayName = "Bread reborn: reborn"
 logoFile = "breadreborn.png"
 credits = "Thanks to Aros (coder) and Ducilanus (artist)"
 authors = "Aros, Ducilanus"
 description = '''
-описание здесь.
+More bread and cool stuff. Now with java!
 '''
 
 [[dependencies.breadreborn]]
