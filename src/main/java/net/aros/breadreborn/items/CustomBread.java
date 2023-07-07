@@ -1,6 +1,7 @@
 package net.aros.breadreborn.items;
 
 import net.aros.breadreborn.BreadReborn;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -18,6 +19,14 @@ public class CustomBread extends Item {
                         .build()
                 )
         );
+    }
+
+    public CustomBread(int nutrition, float saturationMod, MobEffectInstance effect) {
+        this(Rarity.COMMON, new FoodProperties.Builder().nutrition(nutrition).saturationMod(saturationMod).effect(() -> effect, 1.0F).alwaysEat());
+    }
+
+    public CustomBread(int nutrition, float saturationMod, MobEffectInstance effect1, MobEffectInstance effect2) {
+        this(Rarity.COMMON, new FoodProperties.Builder().nutrition(nutrition).saturationMod(saturationMod).effect(() -> effect1, 1.0F).effect(() -> effect2, 1.0F).alwaysEat());
     }
 
     public CustomBread(Rarity rarity, FoodProperties.@NotNull Builder builder) {

@@ -27,10 +27,10 @@ public class ModItems {
     public static final RegistryObject<Item> GOLDEN_FLOUR = ITEMS.register("golden_flour", () -> new Item64(Rarity.RARE));
 
     public static final RegistryObject<Item> BREAD_WITH_RAISINS = ITEMS.register("bread_with_raisins", () -> new CustomBread(6, 0.8F));
-    public static final RegistryObject<Item> CRIMSON_BREAD = ITEMS.register("crimson_bread", () -> new CustomBread(4, 0.4F));
-    public static final RegistryObject<Item> WARPED_BREAD = ITEMS.register("warped_bread", ()   -> new CustomBread(4, 0.4F));
-    public static final RegistryObject<Item> CHORUS_BREAD = ITEMS.register("chorus_bread", ()   -> new CustomBread(5, 0.6F));
-    public static final RegistryObject<Item> SCULK_BREAD = ITEMS.register("sculk_bread", ()     -> new CustomBread(5, 0.6F));
+    public static final RegistryObject<Item> CRIMSON_BREAD = ITEMS.register("crimson_bread", () -> new CustomBread(4, 0.4F, new MobEffectInstance(ModEffects.RAGE.get(), 10*20, 0)));
+    public static final RegistryObject<Item> WARPED_BREAD = ITEMS.register("warped_bread", ()   -> new CustomBread(4, 0.4F, new MobEffectInstance(ModEffects.ROOT_SOLES.get(), 10*20, 0)));
+    public static final RegistryObject<Item> CHORUS_BREAD = ITEMS.register("chorus_bread", ()   -> new CustomBread(5, 0.6F, new MobEffectInstance(ModEffects.PROTECTIVE_SHELL.get(), 10*20, 0)));
+    public static final RegistryObject<Item> SCULK_BREAD = ITEMS.register("sculk_bread", ()     -> new CustomBread(5, 0.6F, new MobEffectInstance(MobEffects.REGENERATION, 10*20, 1), new MobEffectInstance(MobEffects.DARKNESS, 15*20, 0)));
     public static final RegistryObject<Item> GOLDEN_BREAD = ITEMS.register("golden_bread", ()   -> new CustomBread(Rarity.RARE, (new FoodProperties.Builder()).nutrition(5).saturationMod(1.2F).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2400, 1), 1.0F).alwaysEat()));
     public static final RegistryObject<Item> ENCHANTED_GOLDEN_BREAD = ITEMS.register("enchanted_golden_bread", ()   -> new CustomBread(Rarity.EPIC, (new FoodProperties.Builder()).nutrition(5).saturationMod(1.2F).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 300, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 1), 1.0F).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F).effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 2400, 4), 1.0F).alwaysEat()) { @NonnullDefault @Override public boolean isFoil(ItemStack stack) { return true; } });
 

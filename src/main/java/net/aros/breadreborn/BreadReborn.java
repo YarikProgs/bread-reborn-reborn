@@ -2,6 +2,7 @@ package net.aros.breadreborn;
 
 import com.mojang.logging.LogUtils;
 import net.aros.breadreborn.init.ModBlocks;
+import net.aros.breadreborn.init.ModEffects;
 import net.aros.breadreborn.init.ModItems;
 import net.aros.breadreborn.loot.ModLootModifiers;
 import net.aros.breadreborn.network.ModMessages;
@@ -41,6 +42,7 @@ public class BreadReborn {
         ModBlocks.register(bus);
         ModLootModifiers.register(bus);
         ModParticles.register(bus);
+        ModEffects.register(bus);
 
         bus.addListener(this::clientSetup);
         bus.addListener(this::commonSetup);

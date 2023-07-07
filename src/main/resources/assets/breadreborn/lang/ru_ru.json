@@ -23,5 +23,9 @@
   "block.breadreborn.grape_vines": "Виноградная лоза",
   "block.breadreborn.blooming_grape_vines": "Цветущая виноградная лоза",
 
+  "effect.breadreborn.root_soles": "Корневые подошвы",
+  "effect.breadreborn.rage": "Ярость",
+  "effect.breadreborn.protective_shell": "Защитная оболочка",
+
   "itemGroup.breadreborn": "Bread reborn"
 }

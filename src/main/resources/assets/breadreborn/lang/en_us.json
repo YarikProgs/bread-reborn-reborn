@@ -23,5 +23,9 @@
   "block.breadreborn.grape_vines": "Grape vines",
   "block.breadreborn.blooming_grape_vines": "Blooming grape vines",
 
+  "effect.breadreborn.root_soles": "Root soles",
+  "effect.breadreborn.rage": "Rage",
+  "effect.breadreborn.protective_shell": "Protective shell",
+
   "itemGroup.breadreborn": "Bread reborn"
 }
