@@ -1,5 +1,5 @@
 ![](src/main/resources/breadreborn.png)
-# <center> 1.19.2 forge version
+# 1.19.2 forge version
 
 Welcome to Bread reborn: reborn sources!
 
