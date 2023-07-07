@@ -2,6 +2,7 @@ package net.aros.breadreborn;
 
 import net.aros.breadreborn.events.LootTableModifyEvent;
 import net.aros.breadreborn.init.ModBlocks;
+import net.aros.breadreborn.init.ModEffects;
 import net.aros.breadreborn.init.ModItems;
 import net.aros.breadreborn.init.ModParticles;
 import net.aros.breadreborn.network.ModMessages;
@@ -28,8 +29,10 @@ public class BreadReborn implements ModInitializer {
         ModItems.init();
         ModBlocks.init();
         ModParticles.init();
+        ModEffects.init();
 
         LootTableEvents.MODIFY.register(new LootTableModifyEvent());
+
 
         ModMessages.registerC2SPackets();
     }

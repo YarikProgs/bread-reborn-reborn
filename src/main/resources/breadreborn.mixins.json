@@ -4,6 +4,7 @@
   "package": "net.aros.breadreborn.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "PlayerHurtMixin"
   ],
   "client": [
   ],
