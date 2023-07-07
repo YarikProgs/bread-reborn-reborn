@@ -1,5 +1,5 @@
 ![](src/main/resources/assets/breadreborn/icon.png)
-# <center> 1.19.2 fabric version
+# 1.19.2 fabric version
 
 Welcome to Bread reborn: reborn sources!
 
