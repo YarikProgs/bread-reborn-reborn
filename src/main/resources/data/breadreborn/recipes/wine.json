@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        "#G#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "breadreborn:grape"
+        },
+        "G": {
+            "item": "minecraft:glass_bottle"
+        }
+    },
+    "result": {
+        "item": "breadreborn:wine",
+        "count": 1
+    }
+}
