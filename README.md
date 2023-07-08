@@ -9,7 +9,7 @@ Bread reborn is licensed under the MIT License
 
 ### Where can I download this?
 
-You can download it from [Modrinth]() or [Curseforge]()
+You can download it from [Modrinth]()
 
 ### Authors:
 - #### YarikProgs (Aros) - java coder
