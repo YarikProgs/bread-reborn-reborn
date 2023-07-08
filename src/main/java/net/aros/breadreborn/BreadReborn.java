@@ -9,9 +9,15 @@ import net.aros.breadreborn.network.ModMessages;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.random.Random;
+import net.minecraft.village.TradeOffer;
+import net.minecraft.village.TradeOffers;
+import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,6 +39,12 @@ public class BreadReborn implements ModInitializer {
 
         LootTableEvents.MODIFY.register(new LootTableModifyEvent());
 
+        TradeOfferHelper.registerWanderingTraderOffers(1, factories -> {
+            factories.add(new TradeOffers.SellItemFactory(ModItems.GRAPE, 1, 3, 10, 2));
+            factories.add(new TradeOffers.SellItemFactory(ModItems.RAISINS, 1, 2, 10, 3));
+            factories.add(new TradeOffers.SellItemFactory(ModItems.GRAPE_VINES, 10, 1, 10, 5));
+            factories.add(new TradeOffers.SellItemFactory(ModItems.WINE, 5, 1,6,  7));
+        });
 
         ModMessages.registerC2SPackets();
     }
