@@ -5,7 +5,6 @@ import net.aros.breadreborn.init.ModItems;
 import net.aros.breadreborn.particle.FlourParticle;
 import net.aros.breadreborn.particle.ModParticles;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
@@ -35,6 +34,7 @@ public class ModEvents {
             if (!(event.getEntity() instanceof Player player) || event.getEntity().level.isClientSide) return;
             if (player.hasEffect(ModEffects.RAGE.get())) {
                 var effect = player.getEffect(ModEffects.RAGE.get());
+
                 player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, effect.getAmplifier() == 0 ? 4 * 20 : 8 * 20 * effect.getAmplifier(), effect.getAmplifier(), false, false));
             }
         }
