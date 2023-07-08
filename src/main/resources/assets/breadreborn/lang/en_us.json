@@ -14,7 +14,8 @@
   "item.breadreborn.enchanted_golden_bread": "Enchanted golden bread",
   "item.breadreborn.grape": "Grape",
   "desc.breadreborn.grape": "Can be fire-roasted to make raisins",
-  "desc.breadreborn.millstone": "If you take a stick in your left hand, then with the help of a block you can produce flour from the corresponding materials",
+  "desc.breadreborn.millstone_pt1": "If you take a stick in your left hand, then with the help of a",
+  "desc.breadreborn.millstone_pt2": "block you can produce flour from the corresponding materials",
   "desc.breadreborn.wine": "It can give both a good effect and a bad one. You can't drink it with nausea and poisoning",
   "item.breadreborn.raisins": "Raisins",
   "item.breadreborn.wine": "Wine",
@@ -27,5 +28,5 @@
   "effect.breadreborn.rage": "Rage",
   "effect.breadreborn.protective_shell": "Protective shell",
 
-  "itemGroup.breadreborn": "Bread reborn"
+  "itemGroup.breadreborn.breadreborn": "Bread reborn"
 }
