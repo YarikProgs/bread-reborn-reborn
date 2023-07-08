@@ -24,10 +24,10 @@ public class ModEvents {
     public static class ForgeEvents {
         @SubscribeEvent
         public static void wandererTradesEvent(final WandererTradesEvent event) {
-            event.getGenericTrades().add(new BasicItemListing(1, new ItemStack(ModItems.GRAPE.get(),       1), 1, 1));
-            event.getGenericTrades().add(new BasicItemListing(1, new ItemStack(ModItems.RAISINS.get(),     1), 1, 1));
-            event.getGenericTrades().add(new BasicItemListing(1, new ItemStack(ModItems.GRAPE_VINES.get(), 1), 1, 1));
-            event.getGenericTrades().add(new BasicItemListing(1, new ItemStack(ModItems.WINE.get(),        1), 1, 1));
+            event.getGenericTrades().add(new BasicItemListing(1, new ItemStack(ModItems.GRAPE.get(),       3), 10, 2));
+            event.getGenericTrades().add(new BasicItemListing(1, new ItemStack(ModItems.RAISINS.get(),     2), 10, 3));
+            event.getGenericTrades().add(new BasicItemListing(10, new ItemStack(ModItems.GRAPE_VINES.get(), 1), 10, 5));
+            event.getGenericTrades().add(new BasicItemListing(5, new ItemStack(ModItems.WINE.get(),        1), 6, 7));
         }
 
         @SubscribeEvent
